@@ -676,7 +676,7 @@ pub fn swap_base_in(
     amm_id: &Pubkey,
     amm_authority: &Pubkey,
     amm_open_orders: &Pubkey,
-    amm_target_orders: &Pubkey,
+    // amm_target_orders: &Pubkey,
     pool_coin_token_account: &Pubkey,
     pool_pc_token_account: &Pubkey,
     serum_program_id: &Pubkey,
@@ -707,7 +707,7 @@ pub fn swap_base_in(
         AccountMeta::new(*amm_id, false),
         AccountMeta::new_readonly(*amm_authority, false),
         AccountMeta::new(*amm_open_orders, false),
-        AccountMeta::new(*amm_target_orders, false),
+        // AccountMeta::new(*amm_target_orders, false),
         AccountMeta::new(*pool_coin_token_account, false),
         AccountMeta::new(*pool_pc_token_account, false),
         // serum
